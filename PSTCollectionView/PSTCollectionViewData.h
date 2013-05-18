@@ -2,7 +2,7 @@
 //  PSTCollectionViewData.h
 //  PSPDFKit
 //
-//  Copyright (c) 2012 Peter Steinberger. All rights reserved.
+//  Copyright (c) 2012-2013 Peter Steinberger. All rights reserved.
 //
 
 #import "PSTCollectionViewCommon.h"
@@ -26,7 +26,7 @@
 */
 
 // No fucking idea (yet)
-- (NSInteger)globalIndexForItemAtIndexPath:(NSIndexPath *)indexPath;
+- (NSUInteger)globalIndexForItemAtIndexPath:(NSIndexPath *)indexPath;
 - (NSIndexPath *)indexPathForItemAtGlobalIndex:(NSInteger)index;
 
 // Fetch layout attributes
