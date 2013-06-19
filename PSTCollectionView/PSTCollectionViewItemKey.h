@@ -12,8 +12,6 @@ extern NSString *const PSTCollectionElementKindCell;
 extern NSString *const PSTCollectionElementKindDecorationView;
 @class PSTCollectionViewLayoutAttributes;
 
-NSString *PSTCollectionViewItemTypeToString(PSTCollectionViewItemType type); // debug helper
-
 // Used in NSDictionaries
 @interface PSTCollectionViewItemKey : NSObject <NSCopying>
 

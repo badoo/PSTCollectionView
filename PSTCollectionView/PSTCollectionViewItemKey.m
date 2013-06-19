@@ -49,22 +49,8 @@ NSString *const PSTCollectionElementKindDecorationView = @"PSTCollectionElementK
     return key;
 }
 
-NSString *PSTCollectionViewItemTypeToString(PSTCollectionViewItemType type) {
-    switch (type) {
-        case PSTCollectionViewItemTypeCell: return @"Cell";
-        case PSTCollectionViewItemTypeDecorationView: return @"Decoration";
-        case PSTCollectionViewItemTypeSupplementaryView: return @"Supplementary";
-        default: return @"<INVALID>";
-    }
-}
-
 ///////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - NSObject
-
-- (NSString *)description {
-    return [NSString stringWithFormat:@"<%@: %p Type = %@ Identifier=%@ IndexPath = %@>", NSStringFromClass([self class]),
-            self, PSTCollectionViewItemTypeToString(self.type), _identifier, self.indexPath];
-}
 
 - (NSUInteger)hash {
     return (([_indexPath hash] + _type) * 31) + [_identifier hash];
